@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.logo > img {
+  width: 50px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.hamburger {
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+}
+
+.menu{
+  display: none;
+}
+
+.navbar {
+  background-color: gray;
+  margin-left: 10px;
+}
+
+main {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product {
+  border: solid;
+  border-width: 1px;
+  border-color: gray;
+  text-align: center;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+@media (min-width:768px) and (max-width: 1024px) {
+  header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      padding-right: 15%;
+  }
+
+  .product {
+      border: solid;
+      border-width: 1px;
+      border-color: gray;
+      text-align: center;
+      border-radius: 5px;
+      margin: 2px 40px;
+  }
+
+  p {
+    text-align: left;
+  }
+
+  .navbar {
+    background-color: #404040;
+  }
+
+}
+
+@media (min-width:1025px) {
+  header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      padding-right: 20%;
+  }
+
+  .product {
+      border: solid;
+      border-width: 1px;
+      border-color: gray;
+      text-align: center;
+      border-radius: 5px;
+      margin: 2px 10px;
+      width: 33%
+  }
+
+  p {
+    text-align: left;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    color: white;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    padding-left: 60%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+  }
+  .hamburger {
+    display: none;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navbar {
+    background-color: #404040;
+  }
+}
